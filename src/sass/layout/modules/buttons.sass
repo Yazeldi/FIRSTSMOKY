@@ -1,0 +1,176 @@
+.btn
+  position: relative
+  // display: inline-block
+  font-weight: 400
+  font-size: 16px
+  line-height: 100%
+  color: $title-color
+  color: #fff
+  text-align: center
+  text-decoration: none
+  border: none
+  outline: none
+  transition: all .3s ease
+  user-select: none
+  background-color: $accent
+  &.disabled
+    opacity: .4
+
+.link
+  display: block
+  border: 1px solid #DEDEDE
+  border-radius: 5px
+  padding: 7px 20px
+  font-weight: 500
+  font-size: 14px
+  line-height: 100%
+  color: $main-color
+  width: max-content
+  &:hover
+    color: $main-color
+    border: 1px solid $main-color
+
+
+
+.btn-primary
+  display: inline-block
+  max-width: 100%
+  padding: 16px 230px
+  background: $accent
+  border: none
+  outline: none
+  font-weight: 400
+  line-height: 100%
+  text-align: center
+  color: $black
+  transition: all 0.3s ease
+  &:hover
+    color: #1a1f31
+    background-color: #fff
+
+.first-btn
+  max-width: 250px
+  display: flex
+  flex-wrap: wrap
+  margin-left: 50px
+  +xxl
+    margin-left: 25px
+    max-width: 274px
+  +lg
+    margin-left: 50px
+    max-width: 250px
+  +md
+    margin-left: 25px
+  +sm
+    margin: 0
+    max-width: 162px
+  &__link
+    transition: all 0.3s ease
+    &:hover
+    &--indent
+      margin-right: 10px
+      margin-top: 10px
+    +sm
+      padding: 4.5px 13px
+      font-size: 9.072px
+    &:nth-child(1)
+      margin-right: 11px
+      +sm
+        margin-right: 8px
+    &:nth-child(2)
+      margin-right: 18px
+      +sm
+        margin-right: 8px
+
+  &__small
+    transition: all 0.3s ease
+    &:hover
+
+  &__small:not(:last-child)
+    margin-right: 15px
+    margin-top: 16px
+    +sm
+      margin-top: 10px
+      padding: 4.5px 13px
+      font-size: 9.072px
+
+  &__button
+    background: rgba(180, 200, 255, 0.3)
+    border: none
+    margin-top: 18px
+    transition: all 0.3s ease
+    +sm
+      margin-top: 11.5px
+      padding: 4.5px 13px
+      font-size: 9.072px
+    &:hover
+      background: #B4C8FF
+      border: none
+      color: $white
+  &--button
+    max-width: 235px
+    margin-left: 115px
+    +xxl
+      margin-left: 40px
+    +md
+      margin-left: 0
+    +sm
+      max-width: 162px
+
+.seeall-button
+  display: none
+  +sm
+    display: block
+    background: $white
+    height: 28px
+    border: 1px solid #DEDEDE
+
+.second-blok-btn
+  width: 235px
+  display: flex
+  flex-wrap: wrap
+  margin-left: 115px
+  +xxl
+    margin-left: 40px
+  +lg
+    margin-left: 80px
+  +md
+    margin: 0
+  +sm
+    width: 155.72px
+  &__link
+    &:nth-child(1)
+      margin-right: 21px
+    +sm
+      &:nth-child(1)
+        margin-right: 13px
+        padding: 4.5px 13px
+        font-size: 9.072px
+      &:nth-child(2)
+        margin-right: 13px
+        padding: 4.5px 13px
+        font-size: 9.072px
+  &__small
+    transition: all 0.3s ease
+    &:nth-child(3)
+      margin-right: 17.9px
+      margin-top: 6px
+    +sm
+      &:nth-child(3)
+        margin-right: 13px
+        margin-top: 4px
+        padding: 4.5px 13px
+        font-size: 9.072px
+  &__button
+    background: rgba(180, 200, 255, 0.3)
+    border: none
+    margin-top: 6px
+    transition: all 0.3s ease
+    &:hover
+      background: #B4C8FF
+      border: none
+      color: $white
+    +sm
+      margin-top: 5px
+      padding: 4.5px 13px
+      font-size: 9.072px

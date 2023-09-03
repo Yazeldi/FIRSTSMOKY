@@ -1,0 +1,110 @@
+.slider
+  position: relative
+  &-wrap
+    margin-left: calc((100vw - 1322px + 30px) / 2)
+    +xxl
+      margin-left: calc((100vw - 1140px + 30px) / 2)
+    +xl
+      margin-left: calc((100vw - 960px + 30px) / 2)
+    +lg
+      margin-left: calc((100vw - 720px + 30px) / 2)
+    +md
+      margin-left: calc((100vw - 520px + 30px) / 2)
+    +sm
+      margin-left: 15px
+    +xsm
+      margin-left: 20px
+
+  &__item
+    &--gap-40
+      width: 250px
+      margin-right: 40px
+      +sm
+        margin-right: 44px
+    &--gap-30
+      width: 250px
+      margin-right: 30px
+    &--active
+      .slider
+        &__descr-wrap
+          border: none
+          opacity: 1
+          color: $white
+
+  &__item
+    +sm
+      width: 220px
+
+  &__box
+    position: relative
+    &--bordered
+      border: 1px solid rgba(0, 0, 0, 0.2)
+    &--padding
+      padding: 46px 63px
+      +sm
+        padding: 41px 55px 41px
+
+  &__subtitle
+
+    margin-top: 20px
+    +lg
+      font-size: 16px
+    +md
+      font-size: 14px
+    +sm
+      margin-top: 25px
+
+  &__description
+    margin-top: 16px
+    +lg
+      font-size: 16px
+    +md
+      font-size: 14px
+      line-height: 130%
+    +sm
+      margin-top: 7px
+
+  &__descr-wrap
+    position: absolute
+    left: 13px
+    top: 13px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2px 11px
+    +sm
+      left: 15px
+      top: 14px
+
+  &__img-description--link
+    position: absolute
+    left: 24px
+    top: 17.7px
+    color: $white
+
+  &__bottom-wrap
+    margin-top: 21px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +sm
+      margin-top: 29px
+
+  &__doors-category
+    display: block
+    font-weight: 700
+    font-size: 16px
+    line-height: 100%
+    color: #747474
+    &:hover
+      color: darken(#747474, 15%)
+    +sm
+      font-size: 14px
+      line-height: 130%
+      font-weight: 400
+      letter-spacing: 0.01em
+      transform: translateX(4px)
+
+  &__price
+    +sm
+      margin-left: 3px

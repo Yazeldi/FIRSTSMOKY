@@ -1,0 +1,18 @@
+// Fade-zoom animation - mfp
+.mfp-fade-zoom
+
+	// animate in
+  &.mfp-ready
+    &.mfp-bg
+      opacity: 0.8
+    .zoom-anim-dialog
+      opacity: 1
+      transform: scale(1)
+
+	// animate out
+  &.mfp-removing
+    &.mfp-bg
+      opacity: 0
+    .zoom-anim-dialog
+      transform: scale(0.8)
+      opacity: 0
